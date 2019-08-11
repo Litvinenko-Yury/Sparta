@@ -3,10 +3,11 @@
 /*Font, line-height, headings.*/
 //=============================
 $font-family: "Open Sans",  "Arial", sans-serif;
+$font-family-h1: "Besom",  "Arial", sans-serif;
 
-//$font-size-h1: px;
-//$font-size-h2: px;
-//$font-size-h3: px;
+$font-size-h1: 102px;
+$font-size-h2: 36px;
+$font-size-h3: 20px;
 //$font-size-h4: px;
 //$font-size-h5: px;
 //$font-size-h6: px;
@@ -15,11 +16,11 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$font-size--x-large: px;
 //$font-size--large: px;
 //$font-size--larger: px;
-//$font-size: px;
+$font-size: 16px;
 //$font-size--smaller: px;
 //$font-size--small: px;
 
-//$line-height: em;
+$line-height: 1.5em;
 //$line-height-auto: 1.2em;
 
 //================
@@ -86,7 +87,7 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$btn-padding-vertical--small: px;
 //$btn-padding-horizontal--small: px;
 
-//$btn-font-size: ;
+$btn-font-size: 18px;
 //$btn-line-height: em;
 //$btn-font-wight: ;
 

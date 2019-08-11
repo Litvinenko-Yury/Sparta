@@ -1,34 +1,80 @@
+/* open-sans-300 - latin_cyrillic */
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: local("Open Sans Light"),
-  local("OpenSans-Light"),
-  url("../fonts/opensanslight.woff2") format("woff2"),
-  url("../fonts/opensanslight.woff") format("woff");
+    local("OpenSans-Light"),
+    url("../fonts/open-sans-v17-latin_cyrillic-300.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin_cyrillic-300.woff") format("woff");
 }
 
+/* open-sans-300italic - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans Light Italic"),
+    local("OpenSans-LightItalic"),
+    url("../fonts/open-sans-v17-latin_cyrillic-300italic.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin_cyrillic-300italic.woff") format("woff");
+}
+/* open-sans-regular - latin_cyrillic */
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Open Sans Regular"),
-  local("OpenSans-Regular"),
-  url("../fonts/opensans.woff2") format("woff2"),
-  url("../fonts/opensans.woff") format("woff");
+    local("OpenSans-Regular"),
+    url("../fonts/open-sans-v17-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin_cyrillic-regular.woff") format("woff");
 }
-
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Open Sans SemiBold"),
+    local("OpenSans-SemiBold"),
+    url("../fonts/open-sans-v17-latin_cyrillic-600.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin_cyrillic-600.woff") format("woff");
+}
+/* open-sans-700 - latin_cyrillic */
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: local("Open Sans Bold"),
-  local("OpenSans-Bold"),
-  url("../fonts/opensansbold.woff2") format("woff2"),
-  url("../fonts/opensansbold.woff") format("woff");
+    local("OpenSans-Bold"),
+    url("../fonts/open-sans-v17-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin_cyrillic-700.woff") format("woff");
+}
+/* open-sans-800 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Open Sans ExtraBold"),
+    local("OpenSans-ExtraBold"),
+    url("../fonts/open-sans-v17-latin_cyrillic-800.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin_cyrillic-800.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Besom";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Besom by Krisjanis Mezulis / RIT CREATIVE"),
+    local("Besom"),
+    url("../fonts/Besom.woff2") format("woff2"),
+    url("../fonts/Besom.woff") format("woff");
 }
 
 html {
@@ -67,24 +113,24 @@ p {
 }
 
 h1 {
+  font-family: $font-family-h1;
   font-size: $font-size-h1;
-  //font-weight: 300;
 }
 
 h2 {
   font-size: $font-size-h2;
-  //font-weight: 300;
+  font-weight: 800;
 }
 
 h3 {
   font-size: $font-size-h3;
-  //font-weight: 700;
+  font-weight: 700;
 }
 
-h4 {
-  font-size: $font-size-h4;
-  //font-weight: 700;
-}
+// h4 {
+//   font-size: $font-size-h4;
+//   //font-weight: 700;
+// }
 
 a {
   text-decoration: none;
