@@ -1,0 +1,10 @@
+.contacts {
+  outline: 2px dotted darkmagenta;
+
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 0;
+  }
+}

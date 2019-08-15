@@ -1,0 +1,53 @@
+.signup {
+  padding: 100px 20px;
+
+  background: gray;
+}
+
+.signup__wrapper {
+  outline: 2px dotted red;
+
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1146px;
+  }
+}
+
+.signup__title-wrap {
+  outline: 2px dotted blue;
+  margin-bottom: 50px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.signup__title {
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.signup__text-inner {
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-align: left;
+  }
+}

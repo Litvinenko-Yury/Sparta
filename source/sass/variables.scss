@@ -15,13 +15,13 @@ $font-size-h3: 20px;
 //$font-size--xl-large: px;
 //$font-size--x-large: px;
 //$font-size--large: px;
-//$font-size--larger: px;
+$font-size--larger: 18px;
 $font-size: 16px;
 //$font-size--smaller: px;
 //$font-size--small: px;
 
 $line-height: 1.5em;
-//$line-height-auto: 1.2em;
+$line-height-auto: 1.2em;
 
 //================
 /*Gray and brand colors*/
@@ -82,8 +82,8 @@ $line-height: 1.5em;
 
 //$btn-padding-vertical--large: px;
 //$btn-padding-horizontal--large: px;
-//$btn-padding-vertical: px;
-//$btn-padding-horizontal: px;;
+$btn-padding-vertical: 20px;
+$btn-padding-horizontal: 90px;
 //$btn-padding-vertical--small: px;
 //$btn-padding-horizontal--small: px;
 
@@ -122,10 +122,11 @@ $btn-font-size: 18px;
 //=============================
 //===Media queries breakpoints===
 //=============================
-//$tablet-width: 660px;
-//$desktop-width: 960px;
+$tablet-width: 765px;
+$desktop-width: 1200px;
 
 //=============================
 //===Animate===
 //=============================
 //$transition-time ;
+$transition-time--show: 0.2s;

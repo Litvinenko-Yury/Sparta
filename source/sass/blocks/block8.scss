@@ -1,0 +1,143 @@
+.block8 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.block8__wrapper {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1146px;
+  }
+}
+
+.block8__img-wrap {
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0;
+  }
+}
+
+.block8__img {
+  display: block;
+}
+
+.block8__title {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: -150px;
+  }
+}
+
+.block8__list {
+  outline: 2px dotted red;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
+.block8__list-item-wrap {
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    &--wide {
+      width: 450px;
+    }
+  }
+}
+
+.block8__list-item {
+  outline: 2px dotted dodgerblue;
+
+  padding-left: 40px;
+}
+
+.block8__list2 {
+  outline: 2px dotted red;
+
+  width: 290px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1146px;
+    justify-content: space-between;
+  }
+}
+
+.block8__list2-item {
+  outline: 2px dotted dodgerblue;
+
+  display: flex;
+  align-items: center;
+
+  &:nth-child(1) {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 2;
+    background: pink;
+  }
+
+  &:nth-child(3) {
+    order: 3;
+    background: cornflowerblue;
+  }
+
+  &:nth-child(4) {
+    order: 4;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 250px;
+  }
+}
+
+.block8__list2-count {
+  font-family: $font-family-h1;
+  font-size: $font-size-h1 - 2px;
+  line-height: 1em;
+}

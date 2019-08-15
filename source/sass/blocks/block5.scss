@@ -1,0 +1,29 @@
+.block5 {
+  padding: 50px 0;
+
+  background: #05a05a;
+}
+
+.block5__list {
+  width: 320px;
+  margin: 50px auto 0 auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.block5__list-item {
+  outline: 2px dotted blue;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    //transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-image: radial-gradient(red 5px, coral 5px);
+  }
+}

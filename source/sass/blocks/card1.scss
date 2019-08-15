@@ -1,0 +1,117 @@
+.card1 {
+  outline: 2px dotted red;
+
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 740px;
+  }
+
+  &:nth-child(2n + 2) {
+    flex-direction: row-reverse;
+    padding-right: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &--first-child::before {
+    content: "Start";
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: auto;
+      right: 0;
+      transform: none;
+    }
+  }
+
+  &--first-child::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-image: radial-gradient(red 5px, coral 5px);
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      left: auto;
+      right: 0;
+      transform: none;
+    }
+  }
+
+  &:last-child {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &--last-child::before {
+    content: "Finish";
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      right: 50%;
+      bottom: auto;
+      left: auto;
+      transform: none;
+    }
+  }
+
+  &--last-child::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-image: radial-gradient(red 5px, coral 5px);
+
+    @media (min-width: $tablet-width) {
+      top: 40%;
+      right: 50%;
+      bottom: auto;
+      left: auto;
+      transform: none;
+    }
+  }
+}
+
+.card1__img {
+  display: block;
+  width: 290px;
+  height: 237px;
+}
+
+.card1__body {
+  outline: 2px dotted green;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}

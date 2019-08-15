@@ -1,0 +1,36 @@
+.video {
+  outline: 1px dotted blue;
+  display: none;
+  margin: 0 auto;
+
+  &--mob {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tab {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desk {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.video__wrap {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  background: #f8f8f7;
+}

@@ -1,0 +1,9 @@
+.logo {
+  outline: 1px dotted green;
+  margin-right: 80px;
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}

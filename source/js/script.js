@@ -1,16 +1,10 @@
-"use strict";
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__inner-toggle');
+var btnSliderReview = document.querySelector(".btn--slider-review");
+var sliderDescr = document.querySelector(".slider__descr");
 
-/*если JS есть, показать кнопку "откр/закр" меню*/
-navMain.classList.remove('main-nav--nojs');
+/*если JS есть, в slider показывать часть текста*/
+sliderDescr.classList.remove("slider__descr--shown");
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.remove('main-nav--opened');
-    navMain.classList.add('main-nav--closed');
-  }
+/*показ/скрытие части текста в slider*/
+btnSliderReview.addEventListener("click", function () {
+  sliderDescr.classList.toggle("slider__descr--shown");
 });

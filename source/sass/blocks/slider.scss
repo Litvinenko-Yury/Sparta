@@ -1,0 +1,136 @@
+.slider__img {
+  display: block;
+  margin: 20px auto 20px auto;
+
+  width: 117px;
+  height: 156px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 193px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 265px;
+  }
+}
+
+.slider__item {
+  outline: 2px dotted red;
+  background: coral;
+
+  width: 290px;
+  margin: 0 auto;
+
+  display: none;
+
+  &--active {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 720px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1140px;
+      padding: 75px 105px 30px 80px;
+    }
+  }
+}
+
+.slider__body {
+  outline: 2px dotted pink;
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.slider__title {
+  margin-bottom: 20px;
+}
+
+.slider__descr {
+  outline: 2px dotted blue;
+
+  max-height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 140px;
+    padding-right: 10px;
+  }
+
+  &--shown {
+    max-height: 500px;
+    transition: max-height $transition-time--show;
+    transition-timing-function: linear;
+  }
+}
+
+.slider__control-wrap {
+  outline: 2px dotted blue;
+  position: relative;
+  display: flex;
+  width: 290px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.slider__control-prev,
+.slider__control-next {
+  position: absolute;
+  height: 60px;
+}
+
+.slider__control-prev {
+  top: 0;
+  left: 0;
+}
+
+.slider__control-next {
+  top: 0;
+  right: 0;
+}
+
+.slider__indicator-wrap {
+  outline: 2px dotted green;
+
+  width: 100px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  padding-left: 0;
+}
+
+.slider__indicator {
+  width: 20px;
+  height: 20px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  background: red;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.block11 {
+  padding: 50px 15px;
+  background: pink;
+}
+
+.block11__wrap {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+}
+
+.block11__title {
+  margin-bottom: 20px;
+  font-family: $font-family-h1;
+  font-size: $font-size-h2 + 12px;
+  line-height: 1em;
+  text-align: center;
+}
+
+.block11__text {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,86 @@
+.card2 {
+  outline: 2px dotted blue;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 570px;
+  }
+
+  &--grid01 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &--grid02 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  &--grid03 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  &--grid04 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+
+  &--grid05 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+}
+
+.card2__wrap {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 720px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(50px, auto);
+
+    width: 1140px;
+  }
+}
+
+.card2__inner-text {
+  display: block;
+  width: 100%;
+
+  font-family: $font-family-h1;
+  font-size: 140px;
+  line-height: 1em;
+  text-align: center;
+
+  color: transparent;
+
+  background: #555555;
+  background-clip: text;
+
+  background-image: url("../img/bg-card-test@1x.jpg");
+  background-size: cover;
+  background-position: center top;
+}
