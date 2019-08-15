@@ -95,7 +95,7 @@ body {
   font-size: $font-size;
   font-weight: normal;
   line-height: $line-height;
-  //color: $text-color;
+  color: $text-color;
 }
 
 img {
@@ -121,6 +121,7 @@ h1 {
 h2 {
   font-size: $font-size-h2;
   font-weight: 800;
+  color: $color-second;
 }
 
 h3 {
