@@ -139,7 +139,7 @@ gulp.task("images", function () {
 
 //конвертируем jpg в webp (gulp-webp)
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/image-*.{png, jpg}")
     .pipe(webp({ quality: 75 }))
     .pipe(gulp.dest("source/img"));
 });

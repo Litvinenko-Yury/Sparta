@@ -1,42 +1,36 @@
 .card1 {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
 
   position: relative;
   width: 290px;
   margin: 0 auto;
+  margin-bottom: 45px;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 60px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 740px;
-  }
-
-  &:nth-child(2n + 2) {
-    flex-direction: row-reverse;
-    padding-right: 0;
-
-    @media (min-width: $desktop-width) {
-      margin-left: auto;
-      margin-right: 0;
-    }
+    width: 1140px;
   }
 
   &--first-child::before {
     content: "Start";
     position: absolute;
-    top: -70px;
+    top: -100px;
     left: 50%;
     transform: translateX(-50%);
+    font-size: $font-size--large;
+    font-weight: 300;
+    color: $color-second;
 
     @media (min-width: $tablet-width) {
-      top: 0;
+      top: -20px;
       left: auto;
-      right: 0;
+      right: 80px;
       transform: none;
     }
   }
@@ -44,25 +38,27 @@
   &--first-child::after {
     content: "";
     position: absolute;
-    top: -40px;
+    top: -60px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-image: radial-gradient(red 5px, coral 5px);
+    background-image: radial-gradient($color-second 5px, $color-second-2 5px);
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 20px;
       left: auto;
-      right: 0;
+      right: 95px;
       transform: none;
     }
   }
 
   &:last-child {
-    flex-direction: column;
-    align-items: flex-end;
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 
   &--last-child::before {
@@ -71,12 +67,14 @@
     bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
+    font-size: $font-size--large;
+    font-weight: 300;
+    color: $color-second;
 
     @media (min-width: $tablet-width) {
       top: 50%;
-      right: 50%;
+      left: 27.5%;
       bottom: auto;
-      left: auto;
       transform: none;
     }
   }
@@ -90,14 +88,31 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-image: radial-gradient(red 5px, coral 5px);
+    background-image: radial-gradient($color-second 5px, $color-second-2 5px);
 
     @media (min-width: $tablet-width) {
       top: 40%;
-      right: 50%;
+      left: 30%;
       bottom: auto;
-      left: auto;
       transform: none;
+    }
+  }
+
+  &:nth-child(2n + 3) {
+    @media (min-width: $tablet-width) {
+      flex-direction: row-reverse;
+      padding-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &:nth-last-child(2) {
+    @media (min-width: $tablet-width) {
+      margin-bottom: -80px;
     }
   }
 }
@@ -105,13 +120,27 @@
 .card1__img {
   display: block;
   width: 290px;
-  height: 237px;
+  height: auto;
+  margin-bottom: 15px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 0;
+  }
 }
 
 .card1__body {
-  outline: 2px dotted green;
+  outline: 1px dotted green;
+
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 350px;
+    text-align: left;
   }
+}
+
+.card1__title {
+  margin-bottom: 20px;
 }

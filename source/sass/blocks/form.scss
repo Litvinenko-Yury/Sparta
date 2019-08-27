@@ -1,0 +1,8 @@
+.form__fieldset {
+  margin-bottom: 10px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}

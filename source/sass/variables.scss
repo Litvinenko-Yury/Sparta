@@ -8,16 +8,13 @@ $font-family-h1: "Besom", "Arial", sans-serif;
 $font-size-h1: 102px;
 $font-size-h2: 36px;
 $font-size-h3: 20px;
-//$font-size-h4: px;
-//$font-size-h5: px;
-//$font-size-h6: px;
 
 //$font-size--xl-large: px;
 //$font-size--x-large: px;
-//$font-size--large: px;
+$font-size--large: 24px;
 $font-size--larger: 18px;
 $font-size: 16px;
-//$font-size--smaller: px;
+$font-size--smaller: 14px;
 //$font-size--small: px;
 
 $line-height: 1.5em;
@@ -39,21 +36,16 @@ $gray--darken: #32383f; //50-56-63
 
 $text-color: $gray-base; // Global text color on <body>;
 
-//$color-main--lightest: ;
-//$color-main--lighten: ;
-//$color-main--light: ;
 $color-main: $gray-base;
-//$color-main--dark: ;
-//$color-main--darken: ;
-//$color-main--darkest: ;
 
-//$color-second--lightest: ;
-//$color-second--lighten: ;
-//$color-second--light: ;
 $color-second: #ff0000;
-//$color-second--dark: ;
-//$color-second--darken: ;
-//$color-main--darkest: ;
+$color-second-2: rgba(255, 0, 0, 0.1);
+$color-error-bg: rgba(255, 0, 0, 0.15);
+$color-error-border: rgba(255, 0, 0, 0.3);
+
+$color-bg-page-header: #9c8685;
+$color-bg-block7: #f9e7d8;
+$color-bg-photo: #80643a;
 
 //=============================
 //===Components===
@@ -79,8 +71,9 @@ $color-second: #ff0000;
 
 //$btn-padding-vertical--large: px;
 //$btn-padding-horizontal--large: px;
-$btn-padding-vertical: 20px;
-$btn-padding-horizontal: 90px;
+$btn-padding-vertical-top: 15px;
+$btn-padding-vertical-bottom: 30px;
+//$btn-padding-horizontal: 90px;
 //$btn-padding-vertical--small: px;
 //$btn-padding-horizontal--small: px;
 
@@ -125,3 +118,4 @@ $desktop-width: 1200px;
 //=============================
 //$transition-time ;
 $transition-time--show: 0.2s;
+$transition-time--overlay: 0.6s;

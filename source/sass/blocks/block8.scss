@@ -6,6 +6,7 @@
 .block8__wrapper {
   width: 290px;
   margin: 0 auto;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     width: 720px;
@@ -31,19 +32,39 @@
 }
 
 .block8__img {
+  outline: 1px dotted red;
+
   display: block;
+  width: 290px;
+  height: 290px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 307px;
+    height: 311px;
+  }
 }
 
 .block8__title {
+  margin-bottom: 40px;
+  font-size: $font-size--large;
+  text-transform: none;
+  color: $color-second;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
-    right: -150px;
+    right: -350px;
   }
 }
 
 .block8__list {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
   margin: 0;
   margin-bottom: 50px;
   padding-left: 0;
@@ -59,23 +80,48 @@
 }
 
 .block8__list-item-wrap {
-  width: 270px;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     &--wide {
       width: 450px;
     }
   }
+
+  &--bg1 {
+    background-image: url("../img/bg-block8-list-01-mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block8-list-01-mob@2x.png");
+    }
+  }
+
+  &--bg2 {
+    background-image: url("../img/bg-block8-list-02-mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block8-list-02-mob@2x.png");
+    }
+  }
 }
 
 .block8__list-item {
-  outline: 2px dotted dodgerblue;
+  outline: 1px dotted dodgerblue;
 
+  margin-bottom: 30px;
   padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
 }
 
 .block8__list2 {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
 
   width: 290px;
   margin: 0 auto;
@@ -86,6 +132,7 @@
     width: 720px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +142,7 @@
 }
 
 .block8__list2-item {
-  outline: 2px dotted dodgerblue;
+  outline: 1px dotted dodgerblue;
 
   display: flex;
   align-items: center;
@@ -106,12 +153,10 @@
 
   &:nth-child(2) {
     order: 2;
-    background: pink;
   }
 
   &:nth-child(3) {
     order: 3;
-    background: cornflowerblue;
   }
 
   &:nth-child(4) {
@@ -119,7 +164,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 360px;
+    width: 340px;
 
     &:nth-child(2) {
       order: 3;
@@ -133,11 +178,18 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 250px;
+    text-align: center;
   }
 }
 
 .block8__list2-count {
+  margin-right: 45px;
   font-family: $font-family-h1;
   font-size: $font-size-h1 - 2px;
   line-height: 1em;
+  color: $color-second;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h1 + 18px;
+  }
 }

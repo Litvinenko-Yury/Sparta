@@ -29,8 +29,10 @@
 }
 
 .video__wrap {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
-  background: #f8f8f7;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }

@@ -1,0 +1,152 @@
+.circle {
+  position: absolute;
+  top: -475px;
+  left: -725px;
+
+  @media (min-width: $tablet-width) {
+    top: -150px;
+    left: -450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -150px;
+    left: -75px;
+  }
+}
+
+.circle span {
+  outline: 1px dotted red;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 750px;
+  font-size: 14px;
+  color: blue;
+  transform-origin: bottom center;
+
+  @media (min-width: $tablet-width) {
+    height: 850px;
+  }
+}
+
+.circle__char1 {
+  transform: rotate(70deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(40deg);
+  }
+}
+
+.circle__char2 {
+  transform: rotate(72deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(42deg);
+  }
+}
+
+.circle__char3 {
+  transform: rotate(74deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(44deg);
+  }
+}
+
+.circle__char4 {
+  transform: rotate(76deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(46deg);
+  }
+}
+
+.circle__char5 {
+  transform: rotate(78deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(48deg);
+  }
+}
+
+.circle__char6 {
+  transform: rotate(80deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(50deg);
+  }
+}
+
+.circle__char7 {
+  transform: rotate(82deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(52deg);
+  }
+}
+
+.circle__char8 {
+  transform: rotate(84deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(54deg);
+  }
+}
+
+.circle__char9 {
+  transform: rotate(86deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(56deg);
+  }
+}
+
+.circle__char10 {
+  transform: rotate(88deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(58deg);
+  }
+}
+
+.circle__char11 {
+  transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(60deg);
+  }
+}
+
+.circle__char12 {
+  transform: rotate(92deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(62deg);
+  }
+}
+
+.circle__char13 {
+  transform: rotate(94deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(64deg);
+  }
+}
+
+.circle__char14 {
+  transform: rotate(96deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(66deg);
+  }
+}
+
+.circle__char15 {
+  transform: rotate(98deg);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(68deg);
+  }
+}

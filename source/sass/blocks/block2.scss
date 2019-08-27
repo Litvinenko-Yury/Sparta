@@ -1,15 +1,72 @@
 .block2 {
-  background: #82878a;
+  min-height: 1388px;
+  padding: 100px 15px;
 
-  padding: 50px 20px;
+  background-image: url("../img/bg-block2-mob@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-block2-mob@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 1000px;
+
+    background-image: url("../img/bg-block2-tab@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block2-tab@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 930px;
+
+    background-image: url("../img/bg-block2-desk@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block2-desk@2x.png");
+    }
+  }
 }
 
 .block2__wrapper {
-  outline: 3px dotted red;
-
+  outline: 1px dotted darkviolet;
   width: 290px;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding: 5px 4px;
+
+  &--border {
+    background-image: url("../img/bg-border-red-mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-border-red-mob@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 70px;
+
+      background-image: url("../img/bg-border-red-tab@1x.png");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-border-red-tab@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-border-red-desk@1x.png");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-border-red-desk@2x.png");
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -23,16 +80,42 @@
 }
 
 .block2__title1 {
-  padding: 50px 25px;
+  padding: 70px 15px 90px 40px;
+  font-size: $font-size-h2 - 4px;
+  line-height: $line-height-auto;
+  hyphens: auto;
+  color: #ffffff;
 
-  background: pink;
+  background-image: url("../img/bg-block2-02-mob@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-block2-02-mob@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     width: 270px;
+    padding: 110px 10px 130px 30px;
+    font-size: $font-size-h2;
+
+    background-image: url("../img/bg-block2-02-tab@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block2-02-tab@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 425px;
+    padding: 110px 50px 140px 70px;
+
+    background-image: url("../img/bg-block2-02-desk@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block2-02-desk@2x.png");
+    }
   }
 }
 
@@ -49,18 +132,53 @@
 }
 
 .block2__inner {
-  outline: 2px dotted blue;
-
-  padding: 25px;
+  padding: 25px 15px;
 
   @media (min-width: $desktop-width) {
     width: 280px;
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 }
 
-.block2__title2-wrap {
-  outline: 2px dotted green;
+.block2__inner-wrap {
+  outline: 1px dotted red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 21px;
 
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.block2__inner-text {
+  margin-right: 20px;
+  font-family: $font-family-h1;
+  font-size: $font-size-h2 + 10px;
+  line-height: 0.7em;
+  color: rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.block2__inner-title {
+  color: #ffffff;
+}
+
+.block2__item {
+  color: #ffffff;
+}
+
+.block2__title2-wrap {
   @media (min-width: $tablet-width) {
     width: 360px;
   }
@@ -73,8 +191,10 @@
 .block2__title2 {
   position: relative;
   display: block;
-  padding: 20px 100px 20px 0;
+  padding: 20px 70px 20px 15px;
   text-align: left;
+  line-height: $line-height-auto;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -84,10 +204,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 200px;
+    width: 280px;
     margin-left: auto;
     margin-right: 0;
     padding: 0;
+    padding-right: 50px;
   }
 
   &::before {
@@ -97,11 +218,17 @@
     right: 0;
     width: 106px;
     height: 116px;
+    font-family: $font-family-h1;
+    font-size: $font-size-h2 + 40px;
+    line-height: 128px;
     text-align: center;
-    background: red;
-    // background-image: url("../img/icon-yes.svg");
-    // background-repeat: no-repeat;
-    // background-size: contain;
+    background-image: url("../img/bg-blur-red-mob@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-blur-red-mob@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       left: -150px;

@@ -1,57 +1,55 @@
 .btn {
+  outline: 1px dotted yellow;
+
   box-sizing: border-box;
   display: inline-block;
-  width: 100%;
+  width: 290px;
   overflow: hidden;
   margin: 0;
-  //border-radius: $btn-border-radius-base;
-  // border: 1px solid $gray-lighter;
   border: 0;
-  padding: $btn-padding-vertical $btn-padding-horizontal;
+  padding-top: $btn-padding-vertical-top;
+  padding-bottom: $btn-padding-vertical-bottom;
   white-space: nowrap;
   user-select: none;
   font-family: $font-family;
   font-size: $font-size--larger;
-  line-height: $line-height-auto;
+  line-height: 1em;
   font-weight: 800;
   text-align: center;
   vertical-align: middle;
   text-overflow: ellipsis;
   text-decoration: none;
-  text-transform: none;
+  text-transform: uppercase;
   color: #ffffff;
-  background-color: red;
-  background-image: none;
-  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/bg-btn@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  cursor: url("../img/bg-pointer.cur"), pointer;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-btn@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    padding-top: $btn-padding-vertical-top + 5px;
+    padding-bottom: $btn-padding-vertical-bottom + 5px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 305px;
+  &:hover {
+    background-image: url("../img/bg-btn-hover@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-btn-hover@2x.png");
+    }
   }
-  // &:hover {
-  //   text-decoration: none;
-  //   //color: $text-color;
-  //   background-color: darken($gray--light, 10%);
-  // }
 
-  // &:focus {
-  //   //color: $text-color;
-  //   background-color: darken($gray--light, 10%);
-  // }
-
-  // &:active {
-  //   color: $color-active;
-  // }
-
-  &--slider-review {
-    width: auto;
-    margin-bottom: 20px;
-    padding: 0;
-    font-weight: 400;
-    color: blue;
-    background: transparent;
+  &--block11 {
+    @media (min-width: $desktop-width) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

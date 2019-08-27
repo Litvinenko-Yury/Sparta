@@ -1,13 +1,14 @@
 .block4 {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
   width: 290px;
   margin: 0 auto;
-  padding: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 720px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     overflow-x: hidden;
   }
 
@@ -20,11 +21,20 @@
 }
 
 .block4__title {
-  margin-bottom: 120px;
+  margin-bottom: 40px;
+  font-size: $font-size-h2 - 6px;
+  line-height: $line-height-auto;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 770px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }
 
 .block4__list {
+  padding-left: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -39,19 +49,136 @@
 }
 
 .block4__list-item {
-  outline: 2px dotted green;
+  outline: 1px dotted green;
+
+  position: relative;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 75px;
+
+  background-image: url("../img/bg-block4-red-line-mob@1x.png");
+  background-repeat: no-repeat repeat;
+  background-position: 20px top;
+  background-size: 6px 100%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-block4-red-line-mob@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
-    min-width: 150px;
+    width: 230px;
     margin: 0;
-    margin-right: 60px;
+    padding: 0;
+    padding-top: 70px;
+    padding-right: 60px;
+    background-image: url("../img/bg-block4-red-line-horizontal-mob@1x.png");
+    background-repeat: repeat no-repeat;
+    background-position: left 25px;
+    background-size: 100% 6px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block4-red-line-horizontal-mob@2x.png");
+    }
 
     &:last-child {
       order: -1;
     }
   }
 
-  &:not(:last-child) {
-    margin-bottom: 25px;
+  &:last-child {
+    background: none;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-block4-red-line-horizontal-mob@1x.png");
+      background-repeat: repeat no-repeat;
+      background-position: left 25px;
+      background-size: 100% 6px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block4-red-line-horizontal-mob@2x.png");
+      }
+    }
+
+    &:nth-child(4) {
+      @media (min-width: $tablet-width) {
+        background: none;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      font-size: $font-size;
+      font-weight: 800;
+      color: #ffffff;
+
+      background-image: url("../img/bg-block4-red-circle-mob@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block4-red-circle-mob@2x.png");
+      }
+
+      @media (min-width: $tablet-width) {
+        top: 0;
+        left: -2px;
+      }
+    }
+
+    &--mark1::before {
+      content: "1";
+      padding-top: 15px;
+      padding-left: 18px;
+
+      @media (min-width: $tablet-width) {
+        content: "2";
+      }
+    }
+
+    &--mark2::before {
+      content: "2";
+      padding-top: 15px;
+      padding-left: 18px;
+
+      @media (min-width: $tablet-width) {
+        content: "3";
+      }
+    }
+
+    &--mark3::before {
+      content: "3";
+      padding-top: 15px;
+      padding-left: 18px;
+
+      @media (min-width: $tablet-width) {
+        content: "4";
+      }
+    }
+
+    &--mark4::before {
+      content: "4";
+      padding-top: 15px;
+      padding-left: 18px;
+
+      @media (min-width: $tablet-width) {
+        content: "5";
+      }
+    }
+
+    &--mark5::before {
+      content: "5";
+      padding-top: 15px;
+      padding-left: 18px;
+
+      @media (min-width: $tablet-width) {
+        content: "1";
+      }
+    }
   }
 }

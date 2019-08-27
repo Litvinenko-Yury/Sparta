@@ -1,11 +1,38 @@
 .signup {
-  padding: 100px 20px;
+  min-height: 510px;
+  padding: 140px 15px;
+  background-color: $gray--darken;
+  background-image: url("../img/bg-signup-mob@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 
-  background: gray;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-signup-mob@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 360px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url("../img/bg-signup-tab@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-signup-tab@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-signup-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-signup-desktop@2x.jpg");
+    }
+  }
 }
 
 .signup__wrapper {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
 
   width: 290px;
   margin: 0 auto;
@@ -24,7 +51,7 @@
 }
 
 .signup__title-wrap {
-  outline: 2px dotted blue;
+  outline: 1px dotted blue;
   margin-bottom: 50px;
   text-align: center;
 
@@ -40,12 +67,24 @@
 }
 
 .signup__title {
+  font-family: $font-family-h1;
+  font-size: $font-size-h1 + 2px;
+  line-height: 1em;
+  letter-spacing: -4px;
+
   @media (min-width: $desktop-width) {
     margin-right: 20px;
   }
 }
 
 .signup__text-inner {
+  font-family: $font-family;
+  font-size: $font-size--large + 3px;
+  font-weight: 800;
+  line-height: $line-height-auto;
+  letter-spacing: -1px;
+  color: #ffffff;
+
   @media (min-width: $desktop-width) {
     display: block;
     text-align: left;

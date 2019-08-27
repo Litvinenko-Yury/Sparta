@@ -1,14 +1,23 @@
 .caption {
-  background: lightcoral;
-  width: 100%;
-  height: 90px;
+  //background: #7fb9b9;
 
   position: relative;
+  width: 100%;
+  height: 90px;
   overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 1145px;
+    width: 1140px;
+    height: 155px;
     margin: 0 auto;
+  }
+
+  &--block5 {
+    height: 110px;
   }
 }
 
@@ -20,11 +29,19 @@
   transform: translate(-50%, -50%);
 
   width: 290px;
+
+  line-height: 1em;
   text-align: center;
-  color: red;
+  color: $color-second;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    font-size: $font-size-h2 + 12px;
+  }
+
+  &--block5 {
+    top: 50%;
   }
 }
 
@@ -37,7 +54,30 @@
 
   font-family: $font-family-h1;
   font-size: $font-size-h1 - 2px;
-  line-height: $line-height-auto;
+  line-height: 1em;
   white-space: nowrap;
-  color: #cccccc;
+  color: $gray--darken;
+  opacity: 0.1;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h1 + 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-h1 + 78px;
+  }
+
+  &--block5 {
+    top: 60%;
+  }
+
+  &--block7 {
+    color: #ffffff;
+    opacity: 1;
+
+    @media (min-width: $tablet-width) {
+      color: $gray--darken;
+      opacity: 0.1;
+    }
+  }
 }

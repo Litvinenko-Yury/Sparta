@@ -1,6 +1,39 @@
 .block11 {
-  padding: 50px 15px;
-  background: pink;
+  position: relative;
+  z-index: 20;
+  margin-top: -36px;
+  padding: 90px 15px 125px 15px;
+  background: $gray-base;
+
+  background-image: url("../img/bg-block-11-mob@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-block-11-mob@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -40px;
+
+    background-image: url("../img/bg-block-11-tab@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block-11-tab@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 889px;
+    margin-top: -50px;
+
+    background-image: url("../img/bg-block-11-desk@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block-11-desk@2x.jpg");
+    }
+  }
 }
 
 .block11__wrap {
@@ -15,11 +48,13 @@
 .block11__title {
   margin-bottom: 20px;
   font-family: $font-family-h1;
-  font-size: $font-size-h2 + 12px;
+  font-size: $font-size-h2 + 29px;
   line-height: 1em;
   text-align: center;
+  color: #ffffff;
 }
 
 .block11__text {
   margin-bottom: 20px;
+  color: #ffffff;
 }

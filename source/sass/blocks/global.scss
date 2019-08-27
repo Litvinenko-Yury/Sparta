@@ -71,7 +71,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: local("Besom by Krisjanis Mezulis / RIT CREATIVE"),
+  src: local("Besom"),
     local("Besom"),
     url("../fonts/Besom.woff2") format("woff2"),
     url("../fonts/Besom.woff") format("woff");
@@ -96,6 +96,7 @@ body {
   font-weight: normal;
   line-height: $line-height;
   color: $text-color;
+  background: #ffffff;
 }
 
 img {
@@ -116,17 +117,20 @@ h1 {
   font-family: $font-family-h1;
   font-size: $font-size-h1;
   line-height: $line-height-auto;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: $font-size-h2;
   font-weight: 800;
   color: $color-second;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: $font-size-h3;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 // h4 {

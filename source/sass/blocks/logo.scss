@@ -1,9 +1,15 @@
 .logo {
   outline: 1px dotted green;
-  margin-right: 80px;
-  margin-bottom: 70px;
+
+  display: block;
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  margin-right: 50px;
 
   @media (min-width: $tablet-width) {
+    width: 247px;
+    height: 89px;
     margin-right: 0;
   }
 }

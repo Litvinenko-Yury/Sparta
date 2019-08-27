@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 720px;
   }
 
@@ -18,16 +19,23 @@
 }
 
 .page-footer__privacy {
-  display: block;
+  display: inline-block;
   margin-bottom: 50px;
 
+  font-size: $font-size--smaller;
+  color: $gray--dark;
+  border-bottom: 1px dashed $gray--dark;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
+    height: $line-height-auto;
     margin: 0;
+    padding-bottom: 25px;
   }
 }
 
 .page-footer__wrap-logo {
-  outline: 2px dotted green;
+  outline: 1px dotted green;
 
   position: relative;
   width: 156px;
@@ -48,11 +56,27 @@
   overflow: hidden;
   display: block;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-footer__copyright {
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-20%);
+
+  font-size: $font-size--smaller;
+  font-weight: 600;
+  color: $gray--dark;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: inline-block;
+    bottom: auto;
+    left: 0;
+    transform: none;
+  }
 }

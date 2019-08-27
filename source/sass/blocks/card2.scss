@@ -1,13 +1,17 @@
 .card2 {
-  outline: 2px dotted blue;
+  outline: 1px dotted blue;
+
+  margin-bottom: 45px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 360px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 570px;
+    width: 100%;
   }
 
   &--grid01 {
@@ -59,8 +63,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 42% 38%;
     grid-auto-rows: minmax(50px, auto);
+    column-gap: 20%;
 
     width: 1140px;
   }
@@ -73,14 +78,108 @@
   font-family: $font-family-h1;
   font-size: 140px;
   line-height: 1em;
-  text-align: center;
 
   color: transparent;
 
   background: #555555;
   background-clip: text;
 
-  background-image: url("../img/bg-card-test@1x.jpg");
-  background-size: cover;
-  background-position: center top;
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-right: 45px;
+  }
+
+  &--bg1 {
+    background-image: url("../img/bg-card2-01-mob@1x.jpg");
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-card2-01-mob@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-card2-01-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-card2-01-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--bg2 {
+    background-image: url("../img/bg-card2-02-mob@1x.jpg");
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-card2-02-mob@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-card2-02-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-card2-02-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--bg3 {
+    background-image: url("../img/bg-card2-03-mob@1x.jpg");
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-card2-03-mob@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-card2-03-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-card2-03-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--bg4 {
+    background-image: url("../img/bg-card2-04-mob@1x.jpg");
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-card2-04-mob@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-card2-04-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-card2-04-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--bg5 {
+    background-image: url("../img/bg-card2-05-mob@1x.jpg");
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-card2-05-mob@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-card2-05-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-card2-05-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.card2__inner-title {
+  margin-bottom: 20px;
 }

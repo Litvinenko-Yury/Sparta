@@ -1,5 +1,5 @@
 .contacts {
-  outline: 2px dotted darkmagenta;
+  outline: 1px dotted darkmagenta;
 
   margin-bottom: 50px;
 
@@ -7,4 +7,10 @@
     order: 1;
     margin: 0;
   }
+}
+
+.contacts__content {
+  font-size: $font-size--larger;
+  font-weight: 600;
+  color: $gray--dark;
 }

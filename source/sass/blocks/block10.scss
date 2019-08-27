@@ -1,11 +1,107 @@
 .block10 {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
+
+  margin-top: 40px;
 }
 
 .block10__bg {
-  width: 290px;
+  position: relative;
   height: 489px;
   margin: 0 auto;
 
-  background: #ececec;
+  background: $gray--lighten;
+  background-image: url("../img/bg-block10-mob@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: -340px 25px;
+  background-size: auto auto;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-block10-mob@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 708px;
+
+    background-image: url("../img/bg-block10@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -125px 55px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block10@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 714px;
+
+    background-image: url("../img/bg-block10@1x.jpg");
+    background-position: 0, center -60px;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block10@2x.jpg");
+    }
+  }
+
+  &::before {
+    /*маска-рамка для фона*/
+    content: "";
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-block10-mask-mob@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block10-mask-mob@2x.png");
+    }
+
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-block10-mask-tab@1x.png");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block10-mask-tab@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-block10-mask-desk@1x.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block10-mask-desk@2x.png");
+      }
+    }
+  }
+
+  &::after {
+    /*этот элемент закрывает прозрачный фон сверху маски-рамки*/
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      z-index: 30;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #ffffff;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      z-index: 30;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #ffffff;
+    }
+  }
 }
