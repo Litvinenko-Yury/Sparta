@@ -91,7 +91,7 @@
   &--bg1 {
     background-image: url("../img/bg-block8-list-01-mob@1x.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: -25px top;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-block8-list-01-mob@2x.png");
@@ -101,7 +101,7 @@
   &--bg2 {
     background-image: url("../img/bg-block8-list-02-mob@1x.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: -25px top;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-block8-list-02-mob@2x.png");
@@ -145,6 +145,7 @@
   outline: 1px dotted dodgerblue;
 
   display: flex;
+  //flex-wrap: wrap;
   align-items: center;
 
   &:nth-child(1) {

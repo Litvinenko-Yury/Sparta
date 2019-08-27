@@ -10,7 +10,7 @@
   background-position: center top;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-photo-mob@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -19,7 +19,7 @@
     background-image: url("../img/bg-photo-tab@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-photo-tab@2x.png");
     }
   }
 
@@ -29,7 +29,7 @@
     background-image: url("../img/bg-photo-desktop@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-photo-desktop@2x.png");
     }
   }
 }

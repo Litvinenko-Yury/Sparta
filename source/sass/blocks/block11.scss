@@ -41,17 +41,21 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 370px;
   }
 }
 
 .block11__title {
   margin-bottom: 20px;
   font-family: $font-family-h1;
-  font-size: $font-size-h2 + 29px;
+  font-size: $font-size-h2 + 12px;
   line-height: 1em;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h2 + 19px;
+  }
 }
 
 .block11__text {
