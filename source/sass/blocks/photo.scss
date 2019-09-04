@@ -2,7 +2,7 @@
   position: relative;
   z-index: -1;
   width: 100%;
-  min-height: 284px;
+  min-height: 270px;
   margin-top: -30px;
 
   background-image: url("../img/bg-photo-mob@1x.png");
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 473px;
+    min-height: 460px;
     margin-top: -45px;
     background-image: url("../img/bg-photo-tab@1x.png");
 

@@ -1,25 +1,27 @@
 .block9 {
+  padding-top: 50px;
+
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-image: url("../img/bg-block9-tab@1x.jpg");
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-position: center 145px;
+    background-size: 100% auto;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block9-tab@2x.jpg");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block9-tab@2x.jpg");
+    // }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 135px;
     background-image: url("../img/bg-block9-desk@1x.png");
-    background-repeat: repeat;
-    background-position: center -20vw;
+    background-position: center -240px;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block9-desk@2x.png");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block9-desk@2x.png");
+    // }
   }
 }

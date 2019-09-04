@@ -1,17 +1,36 @@
 .card2 {
   outline: 1px dotted blue;
 
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 360px;
+    margin-bottom: 30px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 100%;
+    margin-bottom: 60px;
+  }
+
+  &:nth-child(2n + 2) {
+    @media (min-width: $tablet-width) {
+      padding-left: 15px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-left: 140px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
 
   &--grid01 {
@@ -63,9 +82,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 42% 38%;
-    grid-auto-rows: minmax(50px, auto);
-    column-gap: 20%;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(40px, auto);
+    column-gap: 0%;
 
     width: 1140px;
   }
@@ -87,6 +106,8 @@
   @media (min-width: $desktop-width) {
     width: auto;
     margin-right: 45px;
+    font-size: $font-size-h1 * 2;
+    line-height: 0.9em;
   }
 
   &--bg1 {
@@ -180,6 +201,23 @@
   }
 }
 
+.card2__inner {
+  margin-top: -10px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+}
+
 .card2__inner-title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-transform: none;
+  letter-spacing: -1px;
+}
+
+.card2__item {
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+  }
 }

@@ -2,7 +2,7 @@
   position: relative;
   z-index: 20;
   margin-top: -36px;
-  padding: 90px 15px 125px 15px;
+  padding: 75px 15px 130px 15px;
   background: $gray-base;
 
   background-image: url("../img/bg-block-11-mob@1x.jpg");
@@ -10,29 +10,33 @@
   background-position: bottom;
   background-size: 100% 100%;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-block-11-mob@2x.jpg");
-  }
+  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  //   background-image: url("../img/bg-block-11-mob@2x.jpg");
+  // }
 
   @media (min-width: $tablet-width) {
-    margin-top: -40px;
+    margin-top: -60px;
+    padding-top: 60px;
+    padding-bottom: 150px;
 
     background-image: url("../img/bg-block-11-tab@1x.jpg");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block-11-tab@2x.jpg");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block-11-tab@2x.jpg");
+    // }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 889px;
-    margin-top: -50px;
+    margin-top: -60px;
+    padding-top: 180px;
+    padding-bottom: 270px;
 
     background-image: url("../img/bg-block-11-desk@1x.jpg");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block-11-desk@2x.jpg");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block-11-desk@2x.jpg");
+    // }
   }
 }
 
@@ -51,14 +55,17 @@
   font-size: $font-size-h2 + 12px;
   line-height: 1em;
   text-align: left;
+  letter-spacing: 2px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-h2 + 19px;
+    margin-bottom: 25px;
+    font-size: $font-size-h2 + 29px;
+    letter-spacing: 2.5px;
   }
 }
 
 .block11__text {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #ffffff;
 }

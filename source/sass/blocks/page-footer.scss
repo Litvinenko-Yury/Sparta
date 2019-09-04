@@ -1,5 +1,14 @@
 .page-footer {
-  padding: 50px 15px;
+  padding: 35px 15px 50px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
 }
 
 .page-footer__wrap {
@@ -15,6 +24,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1140px;
+    align-items: flex-start;
+    padding-left: 140px;
   }
 }
 
@@ -31,6 +42,10 @@
     height: $line-height-auto;
     margin: 0;
     padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -65px;
   }
 }
 

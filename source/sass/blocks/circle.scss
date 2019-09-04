@@ -1,16 +1,16 @@
 .circle {
   position: absolute;
   top: -475px;
-  left: -725px;
+  left: -715px;
 
   @media (min-width: $tablet-width) {
-    top: -150px;
-    left: -450px;
+    top: -160px;
+    left: -420px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -150px;
-    left: -75px;
+    top: -160px;
+    left: -45px;
   }
 }
 
@@ -18,16 +18,16 @@
   outline: 1px dotted red;
 
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 10px;
   height: 750px;
-  font-size: 14px;
-  color: blue;
+  font-size: $font-size--smaller;
+  color: $gray--lighten;
   transform-origin: bottom center;
 
   @media (min-width: $tablet-width) {
-    height: 850px;
+    height: 830px;
   }
 }
 
@@ -43,7 +43,7 @@
   transform: rotate(72deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(42deg);
+    transform: rotate(41.5deg);
   }
 }
 
@@ -51,7 +51,7 @@
   transform: rotate(74deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(44deg);
+    transform: rotate(43deg);
   }
 }
 
@@ -59,7 +59,7 @@
   transform: rotate(76deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(46deg);
+    transform: rotate(44.5deg);
   }
 }
 
@@ -67,7 +67,7 @@
   transform: rotate(78deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(48deg);
+    transform: rotate(46deg);
   }
 }
 
@@ -75,7 +75,7 @@
   transform: rotate(80deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(50deg);
+    transform: rotate(47.5deg);
   }
 }
 
@@ -83,7 +83,7 @@
   transform: rotate(82deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(52deg);
+    transform: rotate(49deg);
   }
 }
 
@@ -91,7 +91,7 @@
   transform: rotate(84deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(54deg);
+    transform: rotate(50.5deg);
   }
 }
 
@@ -99,7 +99,7 @@
   transform: rotate(86deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(56deg);
+    transform: rotate(52deg);
   }
 }
 
@@ -107,7 +107,7 @@
   transform: rotate(88deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(58deg);
+    transform: rotate(53.5deg);
   }
 }
 
@@ -115,7 +115,7 @@
   transform: rotate(90deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(60deg);
+    transform: rotate(55deg);
   }
 }
 
@@ -123,7 +123,7 @@
   transform: rotate(92deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(62deg);
+    transform: rotate(56.5deg);
   }
 }
 
@@ -131,7 +131,7 @@
   transform: rotate(94deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(64deg);
+    transform: rotate(58deg);
   }
 }
 
@@ -139,7 +139,7 @@
   transform: rotate(96deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(66deg);
+    transform: rotate(59.5deg);
   }
 }
 
@@ -147,6 +147,6 @@
   transform: rotate(98deg);
 
   @media (min-width: $tablet-width) {
-    transform: rotate(68deg);
+    transform: rotate(61deg);
   }
 }

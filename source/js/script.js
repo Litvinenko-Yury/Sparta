@@ -1,3 +1,5 @@
+"use strict";
+
 /*раскрытие/закрытие части текста в кадре слайдера*/
 
 var btnSliderReview = document.querySelector(".slider__descr-btn");
@@ -9,5 +11,5 @@ sliderDescr.classList.remove("slider__descr--shown");
 /*показ/скрытие части текста в slider*/
 btnSliderReview.addEventListener("click", function () {
   sliderDescr.classList.toggle("slider__descr--shown");
-  
+
 });

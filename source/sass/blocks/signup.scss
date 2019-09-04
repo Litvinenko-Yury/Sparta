@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 360px;
-    padding-top: 120px;
+    padding-top: 130px;
     padding-bottom: 120px;
     background-image: url("../img/bg-signup-tab@1x.jpg");
 
@@ -47,6 +47,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1146px;
+    align-items: center;
   }
 }
 
@@ -58,22 +59,31 @@
   @media (min-width: $tablet-width) {
     width: 360px;
     margin-bottom: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    width: 825px;
   }
 }
 
 .signup__title {
   font-family: $font-family-h1;
-  font-size: $font-size-h1 + 2px;
+  font-size: $font-size-h1 - 22px;
   line-height: 1em;
-  letter-spacing: -4px;
+  letter-spacing: 4px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h1 - 12px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-right: 20px;
+    margin-right: 45px;
+    font-size: $font-size-h1 + 18px;
+    letter-spacing: 5px;
   }
 }
 
@@ -82,11 +92,18 @@
   font-size: $font-size--large + 3px;
   font-weight: 800;
   line-height: $line-height-auto;
+  text-transform: uppercase;
   letter-spacing: -1px;
   color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    letter-spacing: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
+    width: 375px;
+    font-size: $font-size-h2 + 6px;
     text-align: left;
   }
 }

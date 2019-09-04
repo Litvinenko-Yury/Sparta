@@ -1,6 +1,6 @@
 .block2 {
   min-height: 1388px;
-  padding: 100px 15px;
+  padding: 130px 15px 100px 15px;
 
   background-image: url("../img/bg-block2-mob@1x.png");
   background-repeat: no-repeat;
@@ -12,7 +12,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 1000px;
+    min-height: 900px;
+    padding-top: 170px;
 
     background-image: url("../img/bg-block2-tab@1x.png");
 
@@ -23,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 930px;
+    padding-top: 195px;
 
     background-image: url("../img/bg-block2-desk@1x.png");
 
@@ -36,8 +38,18 @@
   outline: 1px dotted darkviolet;
   width: 290px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 5px 4px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1140px;
+  }
 
   &--border {
     background-image: url("../img/bg-border-red-mob@1x.png");
@@ -50,7 +62,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
 
       background-image: url("../img/bg-border-red-tab@1x.png");
 
@@ -60,6 +72,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-bottom: 80px;
       background-image: url("../img/bg-border-red-desk@1x.png");
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -68,19 +81,15 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 720px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1140px;
+  &--no-border {
+    @media (min-width: $tablet-width) {
+      padding-left: 155px;
+    }
   }
 }
 
 .block2__title1 {
-  padding: 70px 15px 90px 40px;
+  padding: 65px 15px 100px 40px;
   font-size: $font-size-h2 - 4px;
   line-height: $line-height-auto;
   hyphens: auto;
@@ -97,7 +106,7 @@
 
   @media (min-width: $tablet-width) {
     width: 270px;
-    padding: 110px 10px 130px 30px;
+    padding: 110px 10px 120px 30px;
     font-size: $font-size-h2;
 
     background-image: url("../img/bg-block2-02-tab@1x.png");
@@ -109,7 +118,7 @@
 
   @media (min-width: $desktop-width) {
     width: 425px;
-    padding: 110px 50px 140px 70px;
+    padding: 110px 50px 100px 70px;
 
     background-image: url("../img/bg-block2-02-desk@1x.png");
 
@@ -120,24 +129,53 @@
 }
 
 .block2__part1-wrap {
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     width: 415px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     width: 660px;
+    padding-top: 15px;
   }
 }
 
 .block2__inner {
-  padding: 25px 15px;
+  padding: 15px 15px 15px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 280px;
     padding-top: 50px;
     padding-bottom: 45px;
+  }
+
+  &--last-child {
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--part2 {
+    padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 20px;
+      padding-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 5px;
+    }
   }
 }
 
@@ -146,7 +184,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -167,6 +205,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
+    font-size: $font-size-h2 * 2;
   }
 }
 
@@ -181,32 +220,35 @@
 .block2__title2-wrap {
   @media (min-width: $tablet-width) {
     width: 360px;
+    margin-right: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 424px;
+    width: 200px;
   }
 }
 
 .block2__title2 {
   position: relative;
   display: block;
-  padding: 20px 70px 20px 15px;
-  text-align: left;
+  padding: 20px 70px 25px 0;
+  font-size: $font-size-h2;
   line-height: $line-height-auto;
+  text-align: left;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     padding-right: 0;
+    padding-bottom: 35px;
     margin-left: auto;
     margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 280px;
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 0;
+    margin-right: auto;
     padding: 0;
     padding-right: 50px;
   }
@@ -214,8 +256,8 @@
   &::before {
     content: "!";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: -10px;
     width: 106px;
     height: 116px;
     font-family: $font-family-h1;
@@ -238,11 +280,14 @@
 }
 
 .block2__part2-wrapper {
-  width: 300px;
+  //width: 290px;
 
   @media (min-width: $desktop-width) {
+    outline: 2px dotted red;
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 715px;
   }
 }

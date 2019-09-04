@@ -1,30 +1,28 @@
 .block5 {
-  padding: 50px 0;
+  padding: 45px 0 0 0;
   background-color: #ffffff;
-  background-image: url("../img/bg-block5-mob@1x.jpg");
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: 85%;
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-block5-mob@2x.jpg");
-  }
 
   @media (min-width: $tablet-width) {
+    padding-top: 35px;
     background-image: url("../img/bg-block5-tab@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
     background-position-y: 90%;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block5-tab@2x.jpg");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block5-tab@2x.jpg");
+    // }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/bg-block5-desktop@1x.jpg");
+    padding-top: 80px;
+    padding-bottom: 50px;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block5-desktop@2x.jpg");
-    }
+    background-image: url("../img/bg-block5-desktop@1x.jpg");
+    background-position-y: bottom;
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block5-desktop@2x.jpg");
+    // }
   }
 }
 
@@ -33,48 +31,37 @@
   position: relative;
   width: 290px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 65px;
 
   @media (min-width: $tablet-width) {
     width: 720px;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1140px;
+    margin-top: 35px;
   }
 }
 
 .block5__list {
   outline: 1px dotted darkblue;
   position: relative;
+  z-index: 20;
   min-height: 720px;
+  margin: 0;
   padding-left: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    min-height: 780px;
-    background-image: url("../img/bg-block5-dashed-circles-tab@1x.png");
-    background-repeat: no-repeat;
-    background-position-x: 100px;
-    background-position-y: bottom;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
-    }
+    min-height: 680px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: 0;
     width: 670px;
-    min-height: 775px;
-    background-image: url("../img/bg-block5-dashed-circles-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block5-dashed-circles-desktop@2x.png");
-    }
+    min-height: 700px;
   }
 
   &::after {
@@ -88,13 +75,38 @@
     height: 842px;
     background-image: url("../img/bg-block5-dashed-circles-mob@1x.png");
     background-repeat: no-repeat;
+    background-position: center;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-block5-dashed-circles-mob@2x.png");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-block5-dashed-circles-mob@2x.png");
+    // }
 
     @media (min-width: $tablet-width) {
-      display: none;
+      outline: 1px dotted red;
+
+      top: -70px;
+      left: 90px;
+      width: 338px;
+      height: 782px;
+      background-image: url("../img/bg-block5-dashed-circles-tab@1x.png");
+
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
+      // }
+    }
+
+    @media (min-width: $desktop-width) {
+      outline: 1px dotted red;
+
+      top: -70px;
+      left: 0;
+      width: 338px;
+      height: 782px;
+      background-image: url("../img/bg-block5-dashed-circles-desktop@1x.png");
+
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
+      // }
     }
   }
 }
@@ -102,6 +114,10 @@
 .block5__list-item {
   outline: 1px dotted blue;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 235px;
+  }
 
   &::before {
     content: "";
@@ -112,50 +128,84 @@
     height: 20px;
     border-radius: 10px;
     background-image: radial-gradient(red 5px, coral 5px);
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: -70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -80px;
+    }
   }
 
   &:nth-child(1) {
     top: 0;
-    left: 90px;
+    left: 65px;
+    padding-right: 50px;
 
     @media (min-width: $tablet-width) {
-      left: 280px;
+      left: 252px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 175px;
     }
   }
 
   &:nth-child(2) {
-    top: 140px;
-    left: 115px;
+    top: 135px;
+    left: 100px;
 
     @media (min-width: $tablet-width) {
-      left: 375px;
+      top: 120px;
+      left: 355px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 275px;
     }
   }
 
   &:nth-child(3) {
-    top: 280px;
-    left: 125px;
+    top: 270px;
+    left: 110px;
 
     @media (min-width: $tablet-width) {
-      left: 446px;
+      top: 240px;
+      left: 425px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 343px;
     }
   }
 
   &:nth-child(4) {
-    top: 420px;
-    left: 105px;
+    top: 425px;
+    left: 95px;
 
     @media (min-width: $tablet-width) {
-      left: 500px;
+      top: 390px;
+      left: 472px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 390px;
     }
   }
 
   &:nth-child(5) {
-    top: 560px;
-    left: 75px;
+    top: 565px;
+    left: 50px;
 
     @media (min-width: $tablet-width) {
-      left: 510px;
+      top: 555px;
+      left: 490px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 410px;
     }
   }
 }
