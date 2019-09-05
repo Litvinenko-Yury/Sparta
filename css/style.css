@@ -3434,7 +3434,11 @@ blockquote {
   background-position: center; }
   .video__btn--mob {
     display: block;
-    background-image: url("../img/bg-video-play@1x.png"); }
+    background-image: url("../img/bg-video-play@1x.png");
+    background-size: 109px 113px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .video__btn--mob {
+        background-image: url("../img/bg-video-play@2x.png"); } }
     @media (min-width: 765px) {
       .video__btn--mob {
         display: none; } }
@@ -3442,14 +3446,22 @@ blockquote {
       outline: none;
       width: 125px;
       height: 131px;
-      background-image: url("../img/bg-video-play-hover@1x.png"); }
+      background-image: url("../img/bg-video-play-hover@1x.png");
+      background-size: 125px 131px; }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .video__btn--mob:hover, .video__btn--mob:focus, .video__btn--mob:active {
+          background-image: url("../img/bg-video-play-hover@2x.png"); } }
   .video__btn--tab {
     display: none; }
     @media (min-width: 765px) {
       .video__btn--tab {
         top: 53%;
         display: block;
-        background-image: url("../img/bg-video-play@1x.png"); } }
+        background-image: url("../img/bg-video-play@1x.png");
+        background-size: 109px 113px; } }
+  @media (min-width: 765px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 765px) and (min-resolution: 144dpi), (min-width: 765px) and (min-resolution: 1.5dppx) {
+    .video__btn--tab {
+      background-image: url("../img/bg-video-play@2x.png"); } }
     @media (min-width: 1200px) {
       .video__btn--tab {
         display: none; } }
@@ -3457,16 +3469,28 @@ blockquote {
       outline: none;
       width: 125px;
       height: 131px;
-      background-image: url("../img/bg-video-play-hover@1x.png"); }
+      background-image: url("../img/bg-video-play-hover@1x.png");
+      background-size: 125px 131px; }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .video__btn--tab:hover, .video__btn--tab:focus, .video__btn--tab:active {
+          background-image: url("../img/bg-video-play-hover@2x.png"); } }
   .video__btn--desk {
     display: none; }
     @media (min-width: 1200px) {
       .video__btn--desk {
         top: 52%;
         display: block;
-        background-image: url("../img/bg-video-play@1x.png"); } }
+        background-image: url("../img/bg-video-play@1x.png");
+        background-size: 109px 113px; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .video__btn--desk {
+      background-image: url("../img/bg-video-play@2x.png"); } }
     .video__btn--desk:hover, .video__btn--desk:focus, .video__btn--desk:active {
       outline: none;
       width: 125px;
       height: 131px;
-      background-image: url("../img/bg-video-play-hover@1x.png"); }
+      background-image: url("../img/bg-video-play-hover@1x.png");
+      background-size: 125px 131px; }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .video__btn--desk:hover, .video__btn--desk:focus, .video__btn--desk:active {
+          background-image: url("../img/bg-video-play-hover@2x.png"); } }
