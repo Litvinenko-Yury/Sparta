@@ -15,11 +15,12 @@
   height: 489px;
   margin: 0 auto;
 
-  background: $gray--lighten;
+  background: #ffffff;
+  //background: red;
   background-image: url("../img/bg-block10-mob@1x.jpg");
   background-repeat: no-repeat;
+  background-size: auto 427px;
   background-position: -335px 10px;
-  background-size: auto auto;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-block10-mob@2x.jpg");
@@ -30,6 +31,7 @@
 
     background-image: url("../img/bg-block10@1x.jpg");
     background-repeat: no-repeat;
+    background-size: auto 599px;
     background-position: -115px 25px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -42,7 +44,7 @@
 
     background-image: url("../img/bg-block10@1x.jpg");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: auto 599px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-block10@2x.jpg");
@@ -60,6 +62,9 @@
     width: 100%;
     height: 100%;
     background-image: url("../img/bg-block10-mask-mob@1x.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: center;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-block10-mask-mob@2x.png");
@@ -67,6 +72,8 @@
 
     @media (min-width: $tablet-width) {
       top: -20px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
 
       background-image: url("../img/bg-block10-mask-tab@1x.png");
 
@@ -95,7 +102,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 20px;
     background: #ffffff;
 
     @media (min-width: $tablet-width) {
