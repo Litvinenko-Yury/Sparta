@@ -875,14 +875,21 @@ blockquote {
 
 .block5 {
   padding: 45px 0 0 0;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  background-image: url("../img/bg-block5-mob@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 220px 248px;
+  background-position-x: left;
+  background-position-y: 90%; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .block5 {
+      background-image: url("../img/bg-block5-mob@2x.jpg"); } }
   @media (min-width: 765px) {
     .block5 {
       padding-top: 35px;
       background-image: url("../img/bg-block5-tab@1x.jpg");
-      background-repeat: no-repeat;
-      background-position-x: left;
-      background-position-y: 90%; } }
+      background-size: 440px 584px;
+      background-position: left bottom; } }
   @media (min-width: 765px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 765px) and (min-resolution: 144dpi), (min-width: 765px) and (min-resolution: 1.5dppx) {
     .block5 {
       background-image: url("../img/bg-block5-tab@2x.jpg"); } }
@@ -891,7 +898,7 @@ blockquote {
       padding-top: 80px;
       padding-bottom: 50px;
       background-image: url("../img/bg-block5-desktop@1x.jpg");
-      background-position-y: bottom; } }
+      background-size: 1042px 873px; } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .block5 {
       background-image: url("../img/bg-block5-desktop@2x.jpg"); } }
@@ -948,7 +955,8 @@ blockquote {
         left: 90px;
         width: 338px;
         height: 782px;
-        background-image: url("../img/bg-block5-dashed-circles-tab@1x.png"); } }
+        background-image: url("../img/bg-block5-dashed-circles-tab@1x.png");
+        background-size: 338px 782px; } }
   @media (min-width: 765px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 765px) and (min-resolution: 144dpi), (min-width: 765px) and (min-resolution: 1.5dppx) {
     .block5__list::after {
       background-image: url("../img/bg-block5-dashed-circles-tab@2x.png"); } }
@@ -958,7 +966,8 @@ blockquote {
         left: 0;
         width: 338px;
         height: 782px;
-        background-image: url("../img/bg-block5-dashed-circles-desktop@1x.png"); } }
+        background-image: url("../img/bg-block5-dashed-circles-desktop@1x.png");
+        background-size: 338px 782px; } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .block5__list::after {
       background-image: url("../img/bg-block5-dashed-circles-tab@2x.png"); } }
