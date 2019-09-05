@@ -20,6 +20,7 @@
 
     background-image: url("../img/bg-block5-desktop@1x.jpg");
     background-position-y: bottom;
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-block5-desktop@2x.jpg");
     }
@@ -64,14 +65,16 @@
   }
 
   &::after {
+    outline: 1px dotted red;
     content: "";
     position: absolute;
-    top: -80px;
+    top: -150px;
     left: -20px;
     width: 98px;
     height: 842px;
     background-image: url("../img/bg-block5-dashed-circles-mob@1x.png");
     background-repeat: no-repeat;
+    background-size: 98px 736px;
     background-position: center;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -133,7 +136,7 @@
 
   &:nth-child(1) {
     top: 0;
-    left: 65px;
+    left: 70px;
     padding-right: 50px;
 
     @media (min-width: $tablet-width) {
@@ -175,7 +178,7 @@
 
   &:nth-child(4) {
     top: 425px;
-    left: 95px;
+    left: 90px;
 
     @media (min-width: $tablet-width) {
       top: 390px;
@@ -189,7 +192,7 @@
 
   &:nth-child(5) {
     top: 565px;
-    left: 50px;
+    left: 40px;
 
     @media (min-width: $tablet-width) {
       top: 555px;

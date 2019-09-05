@@ -68,9 +68,9 @@
     display: block;
     background-image: url("../img/bg-video-play@1x.png");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-video-play@2x.png");
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/bg-video-play@2x.png");
+    // }
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -83,10 +83,10 @@
       width: 125px;
       height: 131px;
       background-image: url("../img/bg-video-play-hover@1x.png");
-    }
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-video-play-hover@2x.png");
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-video-play-hover@2x.png");
+      // }
     }
   }
 
@@ -98,9 +98,9 @@
       display: block;
       background-image: url("../img/bg-video-play@1x.png");
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/bg-video-play@2x.png");
-      }
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-video-play@2x.png");
+      // }
     }
 
     @media (min-width: $desktop-width) {
@@ -115,9 +115,9 @@
       height: 131px;
       background-image: url("../img/bg-video-play-hover@1x.png");
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/bg-video-play-hover@2x.png");
-      }
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-video-play-hover@2x.png");
+      // }
     }
   }
 
@@ -129,9 +129,9 @@
       display: block;
       background-image: url("../img/bg-video-play@1x.png");
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/bg-video-play@2x.png");
-      }
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-video-play@2x.png");
+      // }
     }
 
     &:hover,
@@ -142,9 +142,9 @@
       height: 131px;
       background-image: url("../img/bg-video-play-hover@1x.png");
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/bg-video-play-hover@2x.png");
-      }
+      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      //   background-image: url("../img/bg-video-play-hover@2x.png");
+      // }
     }
   }
 }

@@ -220,6 +220,8 @@
   left: 0;
   width: 75px;
   background-image: url("../img/bg-pagination-prev@1x.png");
+  background-size: 40px 19px;
+  background-position: center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-pagination-prev@2x.png");
@@ -242,6 +244,12 @@
   right: 0;
   width: 95px;
   background-image: url("../img/bg-pagination-next@1x.png");
+  background-size: 66px 19px;
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-pagination-next@2x.png");
+  }
 
   &:hover {
     background-image: url("../img/bg-pagination-next-hover@1x.png");
@@ -279,6 +287,7 @@
 
   font-size: 0;
   background-repeat: no-repeat;
+  background-size: 10px 9px;
   background-position: center;
   cursor: pointer;
 
@@ -353,6 +362,7 @@
     background-image: url("../img/bg-pagination-btn-01-hover@1x.png");
     font-size: 0;
     background-repeat: no-repeat;
+    background-size: 10px 9px;
     background-position: center;
     cursor: pointer;
 
