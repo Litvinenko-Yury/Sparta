@@ -5,12 +5,10 @@
   overflow-y: auto;
 
   @media (min-width: $tablet-width) {
-    //height: 560px;
     height: 600px;
   }
 
   @media (min-width: $desktop-width) {
-    //height: 940px;
     height: 1000px;
 
     -ms-overflow-style: none; // IE 10+
@@ -29,12 +27,10 @@
   transform-style: preserve-3d;
 
   @media (min-width: $tablet-width) {
-    //height: 560px;
     height: 600px;
   }
 
   @media (min-width: $tablet-width) {
-    //height: 940px;
     height: 1000px;
   }
 }
@@ -66,7 +62,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    //height: 560px;
     height: 600px;
     background-image: url("../img/bg-header-tab@1x.jpg");
 
@@ -76,7 +71,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //height: 940px;
     height: 1000px;
     background-image: url("../img/bg-header-desktop@1x.jpg");
 

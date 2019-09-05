@@ -13,8 +13,6 @@
 }
 
 .video__source {
-  outline: 1px dotted blue;
-
   position: relative;
   z-index: 10;
   display: none;
@@ -62,8 +60,7 @@
   padding: 0;
   white-space: nowrap;
   user-select: none;
-  //background-color: transparent;
-  background: rgba(254, 107, 107, 0.3);
+  background-color: transparent;
   background-size: cover;
   background-position: center;
 
@@ -71,9 +68,9 @@
     display: block;
     background-image: url("../img/bg-video-play@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-video-play@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-video-play@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -88,9 +85,9 @@
       background-image: url("../img/bg-video-play-hover@1x.png");
     }
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-video-play-hover@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-video-play-hover@2x.png");
+    }
   }
 
   &--tab {
@@ -101,9 +98,9 @@
       display: block;
       background-image: url("../img/bg-video-play@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-video-play@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-video-play@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -118,9 +115,9 @@
       height: 131px;
       background-image: url("../img/bg-video-play-hover@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-video-play-hover@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-video-play-hover@2x.png");
+      }
     }
   }
 
@@ -132,9 +129,9 @@
       display: block;
       background-image: url("../img/bg-video-play@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-video-play@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-video-play@2x.png");
+      }
     }
 
     &:hover,
@@ -145,9 +142,9 @@
       height: 131px;
       background-image: url("../img/bg-video-play-hover@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-video-play-hover@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-video-play-hover@2x.png");
+      }
     }
   }
 }

@@ -1,6 +1,4 @@
 .card1 {
-  outline: 1px dotted red;
-
   position: relative;
   width: 290px;
   margin: 0 auto;
@@ -172,8 +170,6 @@
 }
 
 .card1__body {
-  outline: 1px dotted green;
-
   text-align: center;
 
   @media (min-width: $tablet-width) {

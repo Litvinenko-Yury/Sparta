@@ -49,8 +49,6 @@
 }
 
 .block8__img {
-  outline: 1px dotted red;
-
   display: block;
   width: 290px;
   height: 290px;
@@ -81,7 +79,6 @@
 }
 
 .block8__list {
-  outline: 1px dotted red;
   margin: 0;
   margin-bottom: 65px;
   padding-left: 0;
@@ -118,7 +115,6 @@
     position: relative;
 
     ::before {
-      outline: 2px dotted darkblue;
       content: "";
       position: absolute;
       top: 0;
@@ -129,9 +125,9 @@
       background-repeat: no-repeat;
       background-size: contain;
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-block8-list-01-mob@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block8-list-01-mob@2x.png");
+      }
 
       @media (min-width: $tablet-width) {
         left: 0;
@@ -148,7 +144,6 @@
     position: relative;
 
     ::before {
-      outline: 2px dotted darkblue;
       content: "";
       position: absolute;
       top: 0;
@@ -159,9 +154,9 @@
       background-repeat: no-repeat;
       background-size: contain;
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-block8-list-02-mob@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block8-list-02-mob@2x.png");
+      }
 
       @media (min-width: $tablet-width) {
         left: 0;
@@ -176,8 +171,6 @@
 }
 
 .block8__list-item {
-  outline: 1px dotted dodgerblue;
-
   margin-bottom: 25px;
   padding-left: 40px;
 
@@ -192,8 +185,6 @@
 }
 
 .block8__list2 {
-  outline: 1px dotted red;
-
   width: 290px;
   margin: 0 auto;
   padding-left: 0;
@@ -213,8 +204,6 @@
 }
 
 .block8__list2-item {
-  outline: 1px dotted dodgerblue;
-
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;

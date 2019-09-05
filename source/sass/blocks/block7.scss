@@ -9,9 +9,9 @@
   background-position: center;
   background-size: cover;
 
-  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  //   background-image: url("../img/bg-block7-mob@2x.png");
-  // }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-block7-mob@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 600px;
@@ -41,9 +41,9 @@
     background-position: center;
     background-size: cover;
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block7-tab@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block7-tab@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -54,15 +54,14 @@
     padding-bottom: 130px;
     background-image: url("../img/bg-block7-desktop@1x.png");
     background-size: contain;
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block7-desktop@2x.png");
-    // }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block7-desktop@2x.png");
+    }
   }
 }
 
 .block7__list {
-  outline: 1px dotted red;
-
   width: 290px;
   margin: 0 auto;
   margin-bottom: 45px;
@@ -82,8 +81,6 @@
 }
 
 .block7__list-item {
-  outline: 1px dotted green;
-
   display: flex;
   margin-bottom: 17px;
 
@@ -109,8 +106,6 @@
 }
 
 .block7__footer {
-  outline: 1px dotted red;
-
   width: 290px;
   margin: 0 auto;
   text-align: center;

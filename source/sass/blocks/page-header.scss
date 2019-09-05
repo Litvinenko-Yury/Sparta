@@ -4,7 +4,6 @@
 }
 
 .page-header__wrap {
-  outline: 1px dotted red;
   width: 290px;
   margin: 0 auto;
 
@@ -19,8 +18,6 @@
 }
 
 .page-header__start {
-  outline: 1px dotted blue;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,8 +37,6 @@
 }
 
 .page-header__text {
-  outline: 1px dotted green;
-
   position: relative;
   line-height: $line-height-auto;
   letter-spacing: 11px;
@@ -85,8 +80,6 @@
 }
 
 .page-header__text-tel {
-  outline: 1px dotted green;
-
   margin-top: 15px;
   font-size: $font-size--larger;
   font-weight: 500;
@@ -104,7 +97,6 @@
 }
 
 .page-header__intro {
-  outline: 1px dotted #666666;
   width: 290px;
   margin: 0 auto;
   text-align: center;
@@ -133,7 +125,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     font-size: $font-size-h1 + 78px;
     text-align: left;
   }
@@ -164,8 +155,6 @@
 }
 
 .page-header__wrapper {
-  outline: 1px dotted lawngreen;
-
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
@@ -185,8 +174,6 @@
 }
 
 .page-header__time {
-  outline: 1px dotted green;
-
   width: 195px;
   height: 40px;
   display: flex;
@@ -196,10 +183,7 @@
   padding-left: 10px;
   padding-right: 10px;
   list-style: none;
-
   font-weight: 800;
-  color: #000000;
-
   background-image: url("../img/bg-three-days@1x.png");
   background-size: contain;
   background-position: center;
@@ -218,8 +202,6 @@
 }
 
 .page-header__time-text {
-  background: #000;
-
   width: 85px;
   font-style: italic;
   font-weight: 300;
@@ -227,6 +209,4 @@
   line-height: $line-height-auto;
   text-align: left;
   color: #ffffff;
-
-
 }

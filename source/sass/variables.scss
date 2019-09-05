@@ -9,13 +9,10 @@ $font-size-h1: 102px;
 $font-size-h2: 36px;
 $font-size-h3: 20px;
 
-//$font-size--xl-large: px;
-//$font-size--x-large: px;
 $font-size--large: 24px;
 $font-size--larger: 18px;
 $font-size: 16px;
 $font-size--smaller: 14px;
-//$font-size--small: px;
 
 $line-height: 1.5em;
 $line-height-auto: 1.2em;
@@ -24,15 +21,12 @@ $line-height-auto: 1.2em;
 /*Gray and brand colors*/
 //================
 
-$gray--lightest: #fdfdfd; //253-253-253
-$gray--lighten: #cccccc; //204-204-204
-//$gray--light: ;
-$gray-base: #4c4c4c; //76-76-76
-$gray--dark: #3c313b; //60-49-59
-$gray--darken: #32383f; //50-56-63
-//$gray--darker: ;
-//$gray--darkenest: ;
-//$gray--darkest: ;
+$gray--lightest: #fdfdfd;
+$gray--lighten: #cccccc;
+
+$gray-base: #4c4c4c;
+$gray--dark: #3c313b;
+$gray--darken: #32383f;
 
 $text-color: $gray-base; // Global text color on <body>;
 
@@ -48,64 +42,13 @@ $color-bg-block7: #f9e7d8;
 $color-bg-photo: #80643a;
 
 //=============================
-//===Components===
-//=============================
-//$content-width: ;
-
-//$padding-base-vertical:;
-//$padding-base-horizontal: ;
-
-//$border-radius-base: ;
-
-//=============================
-//===Links====
-//=============================
-//$link-color: ;
-//$link-color--active: ;
-//$link-color--hover: ;
-//$link-color--down: ;
-
-//=============================
 //===Buttons===
 //=============================
 
-//$btn-padding-vertical--large: px;
-//$btn-padding-horizontal--large: px;
 $btn-padding-vertical-top: 20px;
 $btn-padding-vertical-bottom: 30px;
-//$btn-padding-horizontal: 90px;
-//$btn-padding-vertical--small: px;
-//$btn-padding-horizontal--small: px;
 
 $btn-font-size: 18px;
-//$btn-line-height: em;
-//$btn-font-wight: ;
-
-// $btn-color: ;
-// $btn-color-hover: ;
-// $btn-color-active: ;
-
-//$btn-border: ;
-
-//$btn-bg: ;
-//$btn-bg-hover: ;
-//$btn-bg-active: ;
-
-//$btn-border-radius-base: ;
-
-//$btn-border-color-base: ;
-
-//=============================
-//===Slider====
-//=============================
-//$slider-btn--base: ;
-//$slider-btn--hover: ;
-//$slider-btn--active: ;
-
-//$slider-toggle: ;
-//$slider-toggle--active: ;
-//$slider-toggle--hover: ;
-//$slider-toggle--down: ;
 
 //=============================
 //===Media queries breakpoints===
@@ -116,6 +59,6 @@ $desktop-width: 1200px;
 //=============================
 //===Animate===
 //=============================
-//$transition-time ;
+
 $transition-time--show: 0.2s;
 $transition-time--overlay: 0.6s;

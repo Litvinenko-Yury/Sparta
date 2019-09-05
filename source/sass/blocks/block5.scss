@@ -9,9 +9,9 @@
     background-position-x: left;
     background-position-y: 90%;
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block5-tab@2x.jpg");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block5-tab@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -20,9 +20,9 @@
 
     background-image: url("../img/bg-block5-desktop@1x.jpg");
     background-position-y: bottom;
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block5-desktop@2x.jpg");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block5-desktop@2x.jpg");
+    }
   }
 }
 
@@ -45,7 +45,6 @@
 }
 
 .block5__list {
-  outline: 1px dotted darkblue;
   position: relative;
   z-index: 20;
   min-height: 720px;
@@ -65,8 +64,6 @@
   }
 
   &::after {
-    outline: 1px dotted green;
-
     content: "";
     position: absolute;
     top: -80px;
@@ -77,42 +74,37 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block5-dashed-circles-mob@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block5-dashed-circles-mob@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
-      outline: 1px dotted red;
-
       top: -70px;
       left: 90px;
       width: 338px;
       height: 782px;
       background-image: url("../img/bg-block5-dashed-circles-tab@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
-      outline: 1px dotted red;
-
       top: -70px;
       left: 0;
       width: 338px;
       height: 782px;
       background-image: url("../img/bg-block5-dashed-circles-desktop@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
+      }
     }
   }
 }
 
 .block5__list-item {
-  outline: 1px dotted blue;
   position: absolute;
 
   @media (min-width: $tablet-width) {

@@ -35,7 +35,6 @@
 }
 
 .block2__wrapper {
-  outline: 1px dotted darkviolet;
   width: 290px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -160,8 +159,8 @@
   }
 
   &--last-child {
-    @media (min-width: $tablet-width) {
-      margin-left: 20px;
+    @media (min-width: $desktop-width) {
+      margin-left: 25px;
     }
   }
 
@@ -180,7 +179,6 @@
 }
 
 .block2__inner-wrap {
-  outline: 1px dotted red;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -280,11 +278,7 @@
 }
 
 .block2__part2-wrapper {
-  //width: 290px;
-
   @media (min-width: $desktop-width) {
-    outline: 2px dotted red;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

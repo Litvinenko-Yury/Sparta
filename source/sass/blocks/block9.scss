@@ -10,9 +10,9 @@
     background-position: center 145px;
     background-size: 100% auto;
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block9-tab@2x.jpg");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block9-tab@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -20,8 +20,8 @@
     background-image: url("../img/bg-block9-desk@1x.png");
     background-position: center -240px;
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-block9-desk@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-block9-desk@2x.png");
+    }
   }
 }

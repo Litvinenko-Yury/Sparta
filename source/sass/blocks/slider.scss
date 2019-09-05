@@ -9,9 +9,9 @@
   background-size: 100% 100%;
   box-shadow: 0 9px 76px 0 rgba(0, 0, 0, 0.1);
 
-  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  //   background-image: url("../img/bg-slider-body-mob@2x.png");
-  // }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-slider-body-mob@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     width: 730px;
@@ -21,9 +21,9 @@
     background-image: url("../img/bg-slider-body-tab@1x.png");
     box-shadow: 0 9px 76px 0 rgba(0, 0, 0, 0.1);
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-slider-body-tab@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-slider-body-tab@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -35,9 +35,9 @@
     background-image: url("../img/bg-slider-body-desktop@1x.png");
     box-shadow: 0 9px 76px 0 rgba(0, 0, 0, 0.1);
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-slider-body-desktop@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-slider-body-desktop@2x.png");
+    }
   }
 }
 
@@ -221,9 +221,9 @@
   width: 75px;
   background-image: url("../img/bg-pagination-prev@1x.png");
 
-  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  //   background-image: url("../img/bg-pagination-prev@2x.png");
-  // }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-pagination-prev@2x.png");
+  }
 
   @media (min-width: $desktop-width) {
     left: 35px;
@@ -232,9 +232,9 @@
   &:hover {
     background-image: url("../img/bg-pagination-prev-hover@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-prev-hover@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-prev-hover@2x.png");
+    }
   }
 }
 
@@ -246,9 +246,9 @@
   &:hover {
     background-image: url("../img/bg-pagination-next-hover@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-next-hover@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-next-hover@2x.png");
+    }
   }
 }
 
@@ -285,64 +285,64 @@
   &:nth-child(1) {
     background-image: url("../img/bg-pagination-btn-01@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-btn-01@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-btn-01@2x.png");
+    }
 
     &:hover {
       background-image: url("../img/bg-pagination-btn-01-hover@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-pagination-btn-01-hover@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-pagination-btn-01-hover@2x.png");
+      }
     }
   }
 
   &:nth-child(2) {
     background-image: url("../img/bg-pagination-btn-02@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-btn-02@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-btn-02@2x.png");
+    }
 
     &:hover {
       background-image: url("../img/bg-pagination-btn-02-hover@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-pagination-btn-02-hover@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-pagination-btn-02-hover@2x.png");
+      }
     }
   }
 
   &:nth-child(3) {
     background-image: url("../img/bg-pagination-btn-03@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-btn-03@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-btn-03@2x.png");
+    }
 
     &:hover {
       background-image: url("../img/bg-pagination-btn-03-hover@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-pagination-btn-03-hover@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-pagination-btn-03-hover@2x.png");
+      }
     }
   }
 
   &:nth-child(4) {
     background-image: url("../img/bg-pagination-btn-04@1x.png");
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-btn-04@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-btn-04@2x.png");
+    }
 
     &:hover {
       background-image: url("../img/bg-pagination-btn-04-hover@1x.png");
 
-      // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      //   background-image: url("../img/bg-pagination-btn-04-hover@2x.png");
-      // }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-pagination-btn-04-hover@2x.png");
+      }
     }
   }
 
@@ -356,8 +356,8 @@
     background-position: center;
     cursor: pointer;
 
-    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    //   background-image: url("../img/bg-pagination-btn-01-hover@2x.png");
-    // }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-pagination-btn-01-hover@2x.png");
+    }
   }
 }
