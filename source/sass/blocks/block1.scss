@@ -9,6 +9,7 @@
     padding-bottom: 55px;
     background-image: url("../img/bg-block1-dashed-zigzag-tab@1x.png");
     background-repeat: no-repeat;
+    background-size: 493px 1041px;
     background-position: center 220px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -19,6 +20,7 @@
   @media (min-width: $desktop-width) {
     width: 1140px;
     background-image: url("../img/bg-block1-dashed-zigzag-desktop@1x.png");
+    background-size: 686px 1041px;
     background-position: 150px 250px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
