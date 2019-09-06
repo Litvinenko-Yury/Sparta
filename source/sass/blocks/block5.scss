@@ -74,7 +74,6 @@
   }
 
   &::after {
-    outline: 1px dotted red;
     content: "";
     position: absolute;
     top: -150px;
@@ -97,7 +96,6 @@
       height: 782px;
       background-image: url("../img/bg-block5-dashed-circles-tab@1x.png");
       background-size: 338px 782px;
-
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/bg-block5-dashed-circles-tab@2x.png");
