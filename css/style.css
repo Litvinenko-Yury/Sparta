@@ -937,7 +937,6 @@ blockquote {
       width: 670px;
       min-height: 700px; } }
   .block5__list::after {
-    outline: 1px dotted red;
     content: "";
     position: absolute;
     top: -150px;
