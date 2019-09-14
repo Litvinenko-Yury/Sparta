@@ -1917,7 +1917,9 @@ blockquote {
   height: auto;
   margin-bottom: 15px;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  font-family: 'object-fit: cover;';
+  /* stylelint-disable-line */ }
   @media (min-width: 765px) {
     .card1__img {
       width: 300px;
@@ -2043,8 +2045,8 @@ blockquote {
   font-family: "Besom", "Arial", sans-serif;
   font-size: 140px;
   line-height: 1em;
-  color: transparent;
-  background: #555555;
+  color: rgba(0, 0, 0, 0);
+  background-color: #555555;
   -webkit-background-clip: text;
           background-clip: text; }
   @media (min-width: 1200px) {
@@ -2379,10 +2381,12 @@ blockquote {
   display: block;
   width: 58px;
   height: 58px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 50px;
-  margin-bottom: 50px; }
+  font-family: "object-fit: cover;";
+  /* stylelint-disable-line */ }
   @media (min-width: 765px) {
     .logo {
       width: 160px;
