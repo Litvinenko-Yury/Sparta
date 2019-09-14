@@ -158,6 +158,7 @@
   height: auto;
   margin-bottom: 15px;
   object-fit: cover;
+  font-family: 'object-fit: cover;';/* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     width: 300px;
