@@ -96,9 +96,9 @@
   font-size: 140px;
   line-height: 1em;
 
-  color: transparent;
+  color: rgba(0, 0, 0, 0);
 
-  background: #555555;
+  background-color: #555555;
   background-clip: text;
 
   @media (min-width: $desktop-width) {
