@@ -17,7 +17,7 @@
     width: 730px;
     padding: 66px 40px 50px 46px;
 
-    background-color: transparent;
+    background-color: rgba(black, 0);
     background-image: url("../img/bg-slider-body-tab@1x.png");
     box-shadow: 0 9px 76px 0 rgba(0, 0, 0, 0.1);
 
@@ -150,7 +150,7 @@
   padding-bottom: 5px;
   font-weight: 400;
   color: $gray-base;
-  background: transparent;
+  background: rgba(black, 0);
   border: none;
   border-bottom: 1px dashed $gray-base;
 
@@ -210,7 +210,7 @@
   padding: 0;
   border: none;
   font-size: 0;
-  background: transparent;
+  background: rgba(black, 0);
   background-repeat: no-repeat;
   background-position: center;
   outline: none;
