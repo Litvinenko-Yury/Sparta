@@ -505,7 +505,7 @@
         <p class="block11__text">Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют</p>
         <form action="https://echo.htmlacademy.ru" class="form">
           <label class="field-text">
-            <input class="field-text__input" type="text" name="name" placeholder="Имя">
+            <input class="field-text__input" type="text" name="name" placeholder="Имя" required>
           </label>
 
           <label class="field-text">
@@ -545,7 +545,7 @@
       <div class="modal-2__content">
         <h3 class="modal-2__title">ПОПРОБУЙ ВЫЖИТЬ</h3>
         <p class="modal-2__text">Оставь свой номер телефона, наши менеджеры свяжутся с тобой для подтверждения заявки</p>
-        <form class=" form form--modal-2" novalidate action="https://echo.htmlacademy.ru" method="post">
+        <form class=" form  form--modal-2" novalidate action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
             <label class="field-text">
               <span class="field-text__input-wrap1">
@@ -555,7 +555,7 @@
 
             <label class="field-text">
               <span class="field-text__input-wrap2">
-                <input class="field-text__input  field-text__input--tel" type="tel" name="tel" placeholder="Телефон" required pattern="^[ 0-9]+$">
+                <input class="field-text__input  field-text__input--tel" type="tel" name="tel" placeholder="Телефон" pattern="^[ 0-9]+$" required>
               </span>
             </label>
           </fieldset>

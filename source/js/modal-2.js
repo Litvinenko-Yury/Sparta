@@ -2,9 +2,6 @@
 var popup_2 = document.querySelector(".modal-2__content");
 var modalOverlay_2 = document.querySelector(".modal-2__overlay");
 var formModal_2 = document.querySelector(".form--modal-2");
-//var login = popup_2.querySelector("[name=name]");  /*находим input c name="name" внутри переменной popup_2 (это .modal-2__content, т.е. модальное окно, и записываем в переменную.) */
-//var password = popup_2.querySelector("[name=tel]");  /*находим input c name="tel" внутри переменной popup_2 (это .modal-2__content, т.е. модальное окно, и записываем в переменную.) */
-//var storage = localStorage.getItem("name");  /*взять значение из localStorage по ключу login и записать в переменную storage*/
 var modal_2_Close = document.querySelector(".modal-2__close");
 
 
@@ -53,6 +50,7 @@ formModal_2.addEventListener("submit", function (event) {
   if (!fieldName.validity.valid) {
     // Если поле "name" не-валидно, добавляемм класс ошибки:
     fieldName.classList.add("field-text__input--error");
+    //добавляем псевдоэлемент с надписью "заполните поле":
     fieldText1.classList.add("field-text__input-wrap1--after");
 
     // И отменяем отправку формы
@@ -63,12 +61,14 @@ formModal_2.addEventListener("submit", function (event) {
   if (!fieldTel.validity.valid) {
     // Если поле "tel" не-валидно, добавляемм класс ошибки:
     fieldTel.classList.add("field-text__input--error");
+    //добавляем псевдоэлемент с надписью "заполните поле":
     fieldText2.classList.add("field-text__input-wrap2--after");
 
     // И отменяем отправку формы
     event.preventDefault();
   }
 }, false);
+
 
 fieldName.onfocus = function () {
   if (this.classList.contains("field-text__input--error")) {
